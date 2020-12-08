@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chose Colors</title>
     <link rel="stylesheet" href="style.css" class="style">
+    <link rel="stylesheet" href="signup.css" class="style">
 </head>
 
 <body>
@@ -14,10 +15,11 @@
         <div class="main__nav">
             <a href="#home" class="logo">COLOR</a>
             <ul class="nav__links">
-                <li class="nav__link highlight" id="menu__home" ><a>Home</a></li>
+                <li class="nav__link highlight" id="menu__home"><a>Home</a></li>
                 <li class="nav__link" id="menu__about"><a>About Us</a></li>
                 <li class="nav__link" id="menu__services"><a>Services</a></li>
                 <li class="nav__link" id="menu__contact"><a>Contact</a></li>
+                <li class="nav__link" id="menu__login"><a class="signup__link">Log In</a></li>
                 <li class="nav__link" id="menu__signup"><a class="signup__link">Sign Up</a></li>
             </ul>
             <div class="menu__btn" id="menu">
@@ -30,7 +32,7 @@
 
 
     <!-- home---section -->
-    <div class="home__page background" id="p" >
+    <div class="home__page background" id="p">
         <h1>Choose your colors</h1>
         <p>Unlimited Possibilities
         </p>
@@ -45,7 +47,7 @@
         <div class="about__content">
             <h2>WHAT DO WE DO?</h2>
             <h1>We help buisness scale</h1>
-            <p>Schedule a call to learn more 
+            <p>Schedule a call to learn more
                 about our services
             </p>
             <div class="btn2">
@@ -90,6 +92,75 @@
             </div>
         </div>
     </div>
+
+
+    <!-- signup----page -->
+
+    <div class="signup__page" id="signup__click">
+        <div class="signup__container">
+            <form action="/" method="get" class="signup__form">
+                <span class="close__btn">&times;</span>
+                <h1 class="signup__head">Get started with us today!
+                    Create your account by filing out the information
+                    below.
+                </h1>
+                <div class="form__validation">
+                    <input type="text" class="form__input" id="signup__name" name="signup__name" placeholder="Enter Your Name">
+                    <p>Error Message</p>
+                </div>
+                <div class="form__validation">
+                    <input type="email" class="form__input" id="signup__email" name="signup__email" placeholder="Enter Your email">
+                    <p>Error Message</p>
+                </div>
+                <div class="form__validation">
+                    <input type="password" class="form__input" id="signup__password" name="signup__password"
+                        placeholder="Enter Your password">
+                    <p>Error Message</p>
+                </div>
+                <div class="form__validation">
+                    <input type="password" class="form__input" id="signup__password__confirm" name="signup__password__confirm"
+                        placeholder="Confirm Your password">
+                    <p>Error Message</p>
+                </div>
+                <div class="form__validation">
+                    <button class="signup__btn">Sign Up</button>
+                </div>
+                <h3>Already Have An Account? <a id="menu__login2" >Log In</a></h3>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- login----page -->
+
+    <div class="login__page" id="login__click">
+        <div class="signup__container">
+            <form action="/" method="get" class="signup__form">
+                <span class="close__btn2">&times;</span>
+                <h1 class="signup__head">Log In to you account
+                </h1>
+                <div class="form__validation">
+                    <input type="text" class="form__input" id="login__name" name="login__name" placeholder="Enter Your Name">
+                    <p>Error Message</p>
+                </div>
+                <div class="form__validation">
+                    <input type="email" class="form__input" id="login__email" name="login__email" placeholder="Enter Your email">
+                    <p>Error Message</p>
+                </div>
+                <div class="form__validation">
+                    <input type="password" class="form__input" id="login__password" name="login__password"
+                        placeholder="Enter Your password">
+                    <p>Error Message</p>
+                </div>
+                <div class="form__validation">
+                    <button class="login__btn">Log In</button>
+                </div>
+                <h3>Create An Account. <a id="menu__signup2">Sign Up</a></h3>
+            </form>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
