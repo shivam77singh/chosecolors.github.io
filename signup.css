@@ -1,0 +1,141 @@
+#signup__click, #login__click{
+    display: none;
+}
+
+.signup__page, .login__page{
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup__container{
+    height: 80%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0, 0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+}
+
+.signup__form{
+    width: 100%;
+    height: 100%;
+    background: rgb(227, 226, 233);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.signup__head{
+    font-size: 17px;
+    text-align: justify;
+    width: 70%;
+    margin: 10px 40px;
+    margin-top: 30px;
+}
+
+.form__input{
+    width: 76%;
+    height: 40px;
+    padding: 10px 10px ;
+    margin: 10px 40px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form__validation p{
+    display: none;
+}
+
+.close__btn, .close__btn2{
+    text-align: end;
+    padding-right: 13px;
+    font-size: 30px;
+    height: 40px;
+    margin-left: 89%;
+    transition: all 0.3s ease;
+}
+
+.close__btn:hover, .close__btn2:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.signup__btn, .login__btn{
+    width: 76%;
+    height: 40px;
+    padding: 10px 10px ;
+    margin: 10px 40px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    background-color: rgb(224, 64, 64);
+    color: white;
+}
+
+.signup__btn:hover, .login__btn:hover{
+    cursor: pointer;
+    background-color: rgb(109, 109, 196);
+}
+
+.signup__form h3{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#menu__login:hover, #signup__login:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px){
+    .signup__container{
+        width: 50%;
+        height: 70%;
+    }
+  
+}
+
+@media only screen and (max-width: 800px){
+    .signup__container{
+        width: 65%;
+        height: 70%;
+    }
+    .signup__image{
+        display: none;
+    }
+    .signup__form{
+        width: 100%;
+    }
+    .form__input, .signup__btn{
+        width: 80%;
+        height: 40px;
+        padding: 10px 10px ;
+        margin: 10px 30px;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+}
+
+#menu__login2, #menu__signup2{
+    color: rgb(51, 51, 224);
+    text-decoration-line: underline;
+}
+#menu__login2:hover, #menu__signup2:hover{
+    cursor: pointer;
+    color: rgb(17, 0, 255);
+}
