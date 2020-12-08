@@ -1,3 +1,5 @@
+
+/* @import url('signup.css'); */
 *{
     margin: 0;
     padding: 0;
@@ -48,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
+    width: 56%;
     margin-right: 10px;
     transition: all 0.5s ease-in-out;
 }
@@ -66,7 +68,7 @@
 .nav__link a{
     color: whitesmoke;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -101,6 +103,8 @@
 }
 
 
+
+
 @media only screen and (max-width: 1300px){
     .nav__links{
         width: 60%;
@@ -114,9 +118,19 @@
     }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1180px){
     .nav__links{
         width: 75%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .nav__links{
+        width: 85%;
+        margin-right: 2px;
+    }
+    .nav__link a{
+        font-size: 16px;
     }
 }
 
@@ -246,6 +260,8 @@
     cursor: pointer;
     background: linear-gradient(to right, purple, red ,yellow);
 }
+
+
 
 @media only screen and (max-width:630px){
     .home__page h1{
@@ -597,6 +613,7 @@
     -webkit-text-fill-color: transparent; */
 }
 
+
 .services p{
     font-size: 19px;
     font-weight: 600;
@@ -650,7 +667,7 @@
 }
 .highlight a{
     color: white;
-    font-size: 24px;
+    font-size: 22px;
 }
 .highlight{
     padding:9px 13px;
