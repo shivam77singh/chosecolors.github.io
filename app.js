@@ -85,3 +85,76 @@ document.querySelector('#menu__services').addEventListener('click', function(){
     removeFunc();
 });
 
+
+
+
+// signup events
+
+const menu__signup = document.querySelector('#menu__signup');
+const menu__signup2 = document.querySelector('#menu__signup2');
+const signup__click = document.querySelector('#signup__click');
+const signup__page = document.querySelector('.signup__page');
+
+const menu__login = document.querySelector('#menu__login');
+const menu__login2 = document.querySelector('#menu__login2');
+const login__click = document.querySelector('#login__click');
+const login__page = document.querySelector('.login__page');
+
+
+menu__signup.addEventListener('click', function(){
+    signup__click.style.display = 'flex';
+    document.querySelector('.home__page').scrollIntoView();
+});
+
+menu__signup2.addEventListener('click', function(){
+    login__click.style.display = 'none';
+    signup__click.style.display = 'flex';
+});
+
+//close btn signup page
+
+const close__btn = document.querySelector('.close__btn');
+
+close__btn.addEventListener('click', function(){
+    signup__click.style.display = 'none';
+});
+
+
+window.addEventListener('click', function(e){
+    if(e.target === signup__page){
+        signup__click.style.display = 'none';
+    }
+});
+
+
+
+
+// login events
+
+
+
+menu__login.addEventListener('click', function(){
+    login__click.style.display = 'flex';
+    document.querySelector('.home__page').scrollIntoView();
+});
+menu__login2.addEventListener('click', function(){
+    signup__click.style.display = 'none';
+    login__click.style.display = 'flex';
+});
+
+
+//close btn login page
+
+const close__btn2 = document.querySelector('.close__btn2');
+
+close__btn2.addEventListener('click', function(){
+    login__click.style.display = 'none';
+});
+
+window.addEventListener('click', function(e){
+    if(e.target === login__page){
+        login__click.style.display = 'none';
+    }
+});
+
+
