@@ -104,6 +104,7 @@ const login__page = document.querySelector('.login__page');
 menu__signup.addEventListener('click', function(){
     signup__click.style.display = 'flex';
     document.querySelector('.home__page').scrollIntoView();
+    removeFunc();
 });
 
 menu__signup2.addEventListener('click', function(){
@@ -136,6 +137,7 @@ window.addEventListener('click', function(e){
 menu__login.addEventListener('click', function(){
     login__click.style.display = 'flex';
     document.querySelector('.home__page').scrollIntoView();
+    removeFunc();
 });
 menu__login2.addEventListener('click', function(){
     signup__click.style.display = 'none';
