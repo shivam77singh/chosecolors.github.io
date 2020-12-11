@@ -138,7 +138,7 @@
 @media only screen and (max-width: 570px){
     .signup__container{
         width: 80%;
-        height: 60%;
+        height: 65%;
     }
     .signup__head{
         font-size: 15px;
@@ -163,7 +163,7 @@
 @media only screen and (max-width: 400px){
     .signup__container{
         width: 90%;
-        height: 60%;
+        height: 65%;
     }
     .signup__head{
         font-size: 14px;
